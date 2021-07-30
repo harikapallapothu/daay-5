@@ -26,7 +26,31 @@
         })();
   _________________________________________
    b)
-   
+   var b = function(){
+    var c =userInput[0], k;
+    var d = c.split(" ");
+    for (i =0; i<d.length;i++)
+    {
+        upper = d[i].charAt(0).toUpperCase() + d[i].substring(1);
+       
+        console.log(upper);
+    }
+}
+  
+b();
+______________________
+  
+(function(){
+    var c =userInput[0], k;
+    var d = c.split(" ");
+    for (i =0; i<d.length;i++)
+    {
+        upper = d[i].charAt(0).toUpperCase() + d[i].substring(1);
+       
+        console.log(upper);
+    }
+})();
+  
    
    
    ___________________________________________
@@ -55,4 +79,143 @@
     })();
 _________________________________________________
 d)
+var a = function(){
+    var num = userInput[0];
+    var n = num.split(" ");
+    for (i =0;i<num.length;i++)
+    {
+        var c = 0;
+        k = parseInt(n[i]);
+        for (j =1; j<=k;j++)
+        {
+           r = k%j;
+           if (r ===0)
+           {
+               c = c+1;
+           }
+        }
+        if(c===2)
+        {
+            console.log(k)
+        }
+    }
+}
+a();
+____________________________
+(function(){
+    var num = userInput[0];
+    var n = num.split(" ");
+    for (i =0;i<num.length;i++)
+    {
+        var c = 0;
+        k = parseInt(n[i]);
+        for (j =1; j<=k;j++)
+        {
+           r = k%j;
+           if (r ===0)
+           {
+               c = c+1;
+           }
+        }
+        if(c===2)
+        {
+            console.log(k)
+        }
+    }
+})();
+____________________________________________________________________
+e)
+var a = function(){
+    var b = userInput[0], s, h;
+    var c = b.split(" ");
+    for (i =0;i<c.length; i++)
+    {
+        var k = c[i].split("").reverse().join("");
+        if (c[i]===k)
+        {
+            console.log(k)
+        }
+        
+    }
+};
+a();
+_______________________
+(function(){
+    var b = userInput[0], s, h;
+    var c = b.split(" ");
+    for (i =0;i<c.length; i++)
+    {
+        var k = c[i].split("").reverse().join("");
+        if (c[i]===k)
+        {
+            console.log(k)
+        }
+        
+    }
+})();
+____________________________________________________________
+f)
+var a = function(){
+    var arr1 = userInput[0];
+    var arr2 = userInput[1];
+    var k = arr2.split(" ");
+    var l = arr1.split(" ");
+    var p = k.length;
+    
+    if(p%2===1)
+    {
+        var h = parseInt((p/2));
+        console.log(l[h]);
+        console.log(k[h]);
+    }
+    if(p%2 ===0)
+    {
+        h = parseInt((p/2));
+        var j = (parseInt(l[h])+Number(l[h-1]))/2;
+        console.log(j);
+        var c = (parseInt(k[h])+Number(k[h-1]))/2;
+        console.log(c);
+    }
+};
+a();
+________________________
+
+(function(){
+    var arr1 = userInput[0];
+    var arr2 = userInput[1];
+    var k = arr2.split(" ");
+    var l = arr1.split(" ");
+    var p = k.length;
+    
+    if(p%2===1)
+    {
+        var h = parseInt((p/2));
+        console.log(l[h]);
+        console.log(k[h]);
+    }
+    if(p%2 ===0)
+    {
+        h = parseInt((p/2));
+        var j = (parseInt(l[h])+Number(l[h-1]))/2;
+        console.log(j);
+        var c = (parseInt(k[h])+Number(k[h-1]))/2;
+        console.log(c);
+    }
+})();
+__________________________
+g)
+var a = function(){
+    let arr = userInput[0];  
+let unique = [...new Set(arr)];  
+console.log(unique); 
+};
+a();
+_____________
+(function(){
+    let arr = userInput[0];  
+let unique = [...new Set(arr)];  
+console.log(unique); 
+})();
+______________________________________
+h)
 
