@@ -328,3 +328,118 @@ a();
 ______________________________________
 h)
 
+
+
+
+
+
+
+
+
+______________________________________________________________________________
+2)
+i)
+function addFive(num){
+      return num+5;
+  }
+   var num = parseInt(userInput[0]);
+   var a = addFive(num);
+   console.log(a);
+___________________________________
+ii)
+function getOpposite(num){
+      return num*-1;
+  }
+   var num = (userInput[0]);
+   if(typeof(num)!==Number)
+   {
+       console.log(-1);
+   }
+   else{
+       var a = getOpposite(num);
+   console.log(a);
+   }
+_________________________________
+iii)
+function toSeconds(min){
+      return min*60;
+  }
+   var min = (userInput[0]);
+    var a = toSeconds(min);
+   console.log(a);
+_________________________________
+iv)
+function toInteger(str){
+      return parseInt(str);
+  }
+   var str = (userInput[0]);
+    var a = toInteger(str);
+   console.log(a);
+_______________________________
+v)
+function nextNumber(num){
+      return num+1;
+  }
+   var num = parseInt(userInput[0]);
+    var a = nextNumber(num);
+   console.log(a);
+________________________________
+vi)
+ function getfirstElement(x){
+      return x;
+  }
+  var arr = userInput[0].split(" ");
+  var x = arr[0];
+  
+  var a = getfirstElement(x);
+  console.log(a);
+______________________________
+vii)
+function hourstoSeconds(arr){
+      return arr*60*60;
+  }
+  var arr = userInput[0];
+  var a = hourstoSeconds(arr);
+  console.log(a);
+________________________________
+viii)
+function findPerimeter(l, b){
+      var h = 2*(l+b);
+      return h;
+  }
+   var a = userInput[0].split(" ");
+   var l = parseInt(a[0]);
+   var b = parseInt(a[1]);
+   var k = findPerimeter(l,b);
+   console.log(k);
+___________________________________
+ix)
+function lessThan100(a,b){
+      if((a+b)>100)
+      {
+          return false;
+      }
+      if((a+b)<100)
+      {
+          return true;
+      }
+  }
+  var n = userInput[0].split(" ");
+  var a = n[0];
+  var b = n[1];
+  var fun = lessThan100(a,b);
+  console.log(fun);
+  ______________________________________
+  x)
+   function remainder(a,b){
+      return a%b;
+  }
+  var n = userInput[0].split(" ");
+  var a = n[0];
+  var b = n[1];
+  var fun = remainder(a,b);
+  console.log(fun);
+  ______________________________________
+  11)
+  
+
